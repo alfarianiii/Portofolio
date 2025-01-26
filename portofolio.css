@@ -1,0 +1,129 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #333;
+}
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #fff; 
+    padding: 10px 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+
+.navbar-left h1 {
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 10px; 
+}
+
+.navbar-right .nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 20px;
+    font-family: 'Arial', sans-serif;
+    transition: 0.3s ease;
+}
+.navbar-right .nav-button:hover {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.marquee {
+  overflow: hidden;
+  direction :"right" ;
+  white-space : nowrap;
+  animation : marquee 15s linear infinite;
+  width :"50%";
+  color: #fff;
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+.profil, .projek, .kontak {
+    margin: 20px 0;
+}
+.profil-konten {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.profil-konten img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+
+}
+.profil-teks {
+    flex: 1;
+}
+.projek-item {
+    display: flex;
+    margin: 10px 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.projek-item img {
+    width: 100px;
+    margin-right: 10px;
+}
+.kontak-konten {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.kontak-teks {
+    flex: 1;
+}
